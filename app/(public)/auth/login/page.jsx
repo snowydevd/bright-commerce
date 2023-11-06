@@ -2,7 +2,7 @@
 
 import { signIn } from "next-auth/react";
 
-export default function SignIn({ providers }) {
+export default function SignIn() {
   return (
     <>
       <form action="" className="flex flex-col w-2/4">
