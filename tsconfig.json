@@ -23,7 +23,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/(back)/api/auth/[...nextauth]/route.js",
+    "app/(back)/api/auth/[...nextauth]/[...nextauth].js",
     "app/(public)/auth/login/page.jsx"
   ],
   "exclude": ["node_modules"]
