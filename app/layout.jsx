@@ -6,7 +6,7 @@ import { SessionProvider } from "next-auth/react";
 import { NextAuthProvider } from "./Providers";
 
 export const metadata = {
-  title: "Bright",
+  title: "Brightly",
   description: "Bright e-commerce",
 };
 
