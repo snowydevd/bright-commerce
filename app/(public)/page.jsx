@@ -11,7 +11,7 @@ export default function Home() {
             Visions
           </h2>
         </div>
-        <div className="text-2xl text-right mt-3 font-light font-brasika">
+        <div className="text-2xl mt-3 font-light font-brasika text-center">
           <p>Visión Clara, Compras Sencillas.</p>
         </div>
       </section>

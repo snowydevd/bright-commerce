@@ -6,8 +6,8 @@ import { SessionProvider } from "next-auth/react";
 import { NextAuthProvider } from "./Providers";
 
 export const metadata = {
-  title: "Brightly",
-  description: "Bright e-commerce",
+  title: "Nous Visions",
+  description: "Nous Visions e-commerce",
 };
 
 export default function RootLayout({ children }) {
