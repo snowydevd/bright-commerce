@@ -18,7 +18,7 @@ export default function LoginButton() {
               </div>
 
               <button
-                className="items-center lg:block hidden  duration-100 dark:text-stone-500"
+                className="items-center lg:block hidden duration-100 dark:text-stone-500"
                 onClick={() => signOut()}
               >
                 <span className="text-xs text-red-500 hover:text-red-800 duration-100">

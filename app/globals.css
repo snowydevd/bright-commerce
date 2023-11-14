@@ -25,3 +25,25 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+/* 
+body {
+  color: white;
+} */
+
+.gradiente {
+  background: #1fb063;
+  background: repeating-linear-gradient(
+    to right,
+    #1fb063 0%,
+    #e873ff 36%,
+    #3640cf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: 3px 3px 8px rgba(139, 59, 168, 1); */
+}
+
+@font-face {
+  font-family: "BRASIKA";
+  src: url("../public/brasika-display-trial.otf");
+}
