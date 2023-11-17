@@ -3,16 +3,20 @@ import { NextResponse } from "next/server";
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
-  const petName = searchParams.get("petName");
-  const ownerName = searchParams.get("ownerName");
+  const pName = searchParams.get("pName");
+  const pStock = searchParams.get("pStock");
+  const pSizes = searchParams.get("pSizes");
+  const pPhoto = searchParams.get("pPhoto");
 
   try {
-    if (!petName || !ownerName) throw new Error("Pet and owner names required");
-    await sql`INSERT INTO Pets (Name, Owner) VALUES (${petName}, ${ownerName});`;
+    if (!pName || !pStock || !pSizes || !pPhoto)
+      throw new Error("Products are required");
+
+    await sql`INSERT INTO Products (stock, name, sizes, photo) VALUES (${pName}, ${pStock}, ${pSizes}, ${pPhoto});`;
   } catch (error) {
     return NextResponse.json({ error }, { status: 500 });
   }
 
-  const pets = await sql`SELECT * FROM Pets;`;
-  return NextResponse.json({ pets }, { status: 200 });
+  const products = await sql`SELECT * FROM Products;`;
+  return NextResponse.json({ products }, { status: 200 });
 }
